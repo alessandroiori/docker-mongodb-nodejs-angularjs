@@ -34,7 +34,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         # bash provisioning
         node.vm.provision :shell, :inline => 'apt-get update'
         # install docker
-        node.vm.provision :shell, :inline => 'sh /home/vagrant/shared/scripts/install-docker-trusty.sh'
+        #node.vm.provision :shell, :inline => 'sh /home/vagrant/shared/scripts/install-docker-trusty.sh'
+        node.vm.provision :shell, :inline => 'sh /home/vagrant/shared/scripts/install-docker.sh'
         node.vm.provision :shell, inline: "echo  'Server node setup completed'"
     end
 

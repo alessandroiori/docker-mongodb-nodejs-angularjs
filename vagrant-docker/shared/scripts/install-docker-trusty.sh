@@ -16,14 +16,14 @@ echo ""
 
 # prerequisites for 14.04
 sudo apt-get update
-sudo apt-get install linux-image-extra-$(uname -r)
-apt-get install apparmor
+sudo apt-get install -y linux-image-extra-$(uname -r)
+apt-get install -y apparmor
 
 # Update package information, 
 # ensure that APT works with the https method, 
 # and that CA certificates are installed.
 sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates
+sudo apt-get install -y apt-transport-https ca-certificates
 
 # Add the new GPG key.
 sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D

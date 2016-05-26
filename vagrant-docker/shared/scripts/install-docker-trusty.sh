@@ -5,6 +5,8 @@
 #
 # source: https://docs.docker.com/engine/installation/linux/ubuntulinux/
 #
+
+#
 # kernel must be 3.10 at minimum,
 # check your current kernel version:
 # $ uname -r
@@ -51,7 +53,7 @@ sudo apt-get install -y docker-engine
 sudo service docker start
 
 # test
-sudo docker run hello-world
+#sudo docker run hello-world
 
 
 

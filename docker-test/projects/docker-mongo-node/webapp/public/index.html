@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it" ng-app="cookbookApp" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Snap Cook</title>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="app/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="app/css/style.css">
+    
+    <script src="app/bower_components/jquery/dist/jquery.js"></script>
+    <script src="app/bower_components/angular/angular.js"></script>
+    <script src="app/bower_components/angular-route/angular-route.js"></script>
+    <script src="app/js/jquery-1.11.3.min.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
+
+    <script src="app/js/app.js"></script>
+    <script src="app/js/controllers.js"></script>
+
+</head>
+<body>
+    <div class="main-body">
+        <div class="container">
+                <div class="main-page">
+                    <aside class="main-navigation">
+                        <div class="main-menu">
+                            <div class="menu-container">
+                                <div class="block-keep-ratio block-keep-ratio-2-1 block-width-full home">                                    
+                                    <a href="#" class="block-keep-ratio__content  main-menu-link">
+                                        <span class="main-menu-link-text">HOME</span>                                        
+                                    </a>
+   
+                                       <div class="container-fluid">   
+                                          <div class="col-sm-12">
+                                            <!--Sidebar content-->
+                                          Cerca: <input ng-model="query">
+                                          </div>
+                                           <div class="col-sm-12">
+                                            Categoria:
+                                            <select ng-model="filterCategory.tag">
+                                                <option value="">Tutte</option>
+                                              <option value="Antipasto">Antipasto</option>
+                                              <option value="Primo">Primo</option>
+                                              <option value="Secondo">Secondo</option>
+                                              <option value="Contorno">Contorno</option>
+                                              <option value="Dolce">Dolce</option>
+
+                                            </select>
+                                           </div>
+                                           <div class=" col-sm-12">
+                                               Ordina:<select ng-model="orderProp">
+                                                   <option value="name">Alfabeticamente</option>
+                                                   <option value="timeOfSteps">Tempo di preparazione</option>
+                                                </select>
+                                           </div>
+                                     </div>
+                                 </div> <!-- main-menu -->
+
+                                <div class="box bottom-main info-nav-container" ng-controller="CookBookCtrl">
+                                    <ul class="info info-ul">
+                                        <h3>Ricettari:</h3>
+                                        <li ng-repeat="cookbook in cookbooks" >
+                                          <a href="#/cookbook/{{cookbook._id}}" class="about_proin" >{{cookbook.name}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box bottom-main info-nav-container">
+                                    <ul class="info info-ul">
+                                        <li class="about_proin"><a href="#/recipe/add">Aggiungi una ricetta</a></li>
+                                    </ul>
+
+                                </div>
+                          </div>
+                       </div>
+                    </aside> <!-- main-navigation -->
+     <!-- seconda colonna cambia -->
+
+                        <div ng-view></div>
+
+                </div>
+            </div>
+    </div>
+</body>
+</html>

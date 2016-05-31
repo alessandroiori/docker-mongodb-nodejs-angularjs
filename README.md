@@ -25,3 +25,10 @@ $ docker rm $(docker ps -a -q)
 
 3.Rimozione di tutti le immagini
 $ docker rmi $(docker images -q)
+
+
+
+
+
+Client curl da eseguire in uno script o meno:
+$ curl -i -H "Accept: application/json" "localhost:3000"

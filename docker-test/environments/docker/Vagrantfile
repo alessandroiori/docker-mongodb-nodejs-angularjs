@@ -32,10 +32,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         node.vm.network "private_network", ip: "10.11.1.101", virtualbox__intnet: true
 
         node.vm.provider "virtualbox" do |v| 
-            v.memory = 2048 
+            v.memory = 1024
+            v.cpus = 2 
         end 
 
         node.vm.network "forwarded_port", guest: 22, host: 2211, id: 'ssh', auto_correct: true
+        node.vm.network "forwarded_port", guest: 3000, host: 3000, id: 'web', auto_correct: true
         node.ssh.forward_agent = true
         # node.ssh.forward_x11 = true
  
@@ -52,7 +54,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         
         # installa anche docker-compose 
         node.vm.provision :shell, path: "../shared/scripts/setup-docker-compose.sh"
-  
+        node.vm.provision :shell, :inline => 'cd /home/vagrant/projects/docker-mongo-node/'
+        node.vm.provision :shell, :inline => 'docker-compose up'
         node.vm.provision :shell, 
             inline: "echo  'configurazione nodo docker quasi completa'"
         node.vm.provision :shell, 

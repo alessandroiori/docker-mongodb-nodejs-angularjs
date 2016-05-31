@@ -25,13 +25,13 @@ var config = require("../package.json").config;
 var MONGO_DB;
 var DOCKER_DB = process.env.DB_PORT;
 if ( DOCKER_DB ) {
-  MONGO_DB = DOCKER_DB.replace( 'tcp', 'mongodb' ) + '/webapp';
+  MONGO_DB = DOCKER_DB.replace( 'tcp', 'mongodb' ) + '/snapcook';
 } else {
   MONGO_DB = process.env.MONGODB;
 }
 var retry = 0;
 var MongoDB = mongoose.connect(MONGO_DB).connection;
-MongoDB.on('error', function(err) { console.log(err.message); });
+MongoDB.on('error', function(err) { console.log("Error: ",err.message); console.log("Process evv: ",process.env); });
 MongoDB.once('open', function() {
   console.log("mongodb connection open");
 });

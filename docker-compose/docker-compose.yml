@@ -1,0 +1,15 @@
+version: '2'
+services:
+ web:
+  build: .
+  port:
+   - "3000:3000"
+  depens_on:
+   - mongodb
+ mondodb:
+  image: tutum/mongodb
+  environment:
+   - MONGODB_PASS="snapbook"
+  port:
+   - "27017:27017"
+		

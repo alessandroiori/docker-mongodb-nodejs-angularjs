@@ -1,0 +1,63 @@
+<div class="content-main">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="box london">
+            <div class="info float-container">
+                <div class="col-sm-6 location-main">
+                    <div class="col-sm-12 london-title">
+                        <h3 class="text-uppercase">{{recipe.name}}</h3> 
+                        <h4 class="row text-uppercase">
+                            <span ng-repeat="tag in recipe.tag">{{tag}}{{!$last ? ", " : ""}}</span>
+                        </h4>
+                    </div>
+                    <div class="row london-title">
+                        <div class="col-sm-2 user-icons">
+                            <div class="box-icon">
+                                <img src="app/images/clock.png" alt="Image" class="img-responsive">
+                                <h5>{{recipe.timeOfSteps}} mn</h5>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-2 user-icons">
+                            <div class="box-icon">
+                                <img src="app/images/hat.png" alt="Image" class="img-responsive">
+                            </div>
+                            <h5>{{recipe.difficulty}}/3</h5>
+                        </div>
+                        <div class="col-sm-2 user-icons">
+                            <div class="box-icon">
+                                <img src="app/images/users2.png" alt="Image" class="img-responsive">
+                            </div>
+                            <h5>{{recipe.numberOfPeople}}</h5>
+                        </div>
+                        <div class="col-sm-2 user-icons">
+                            <div class="boapp/x-icon">
+                                <img src="app/images/cost.png" alt="Image" class="img-responsive">
+                            </div>
+                            <h5>{{recipe.cost}}/3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 london-title">
+                    <div class="box-icon">
+                        <img src="app/images/cook1.jpg" alt="Image" class="img-responsive">
+                    </div>
+                </div> 
+                <div class="col-sm-12">
+                    <h5 class="text-uppercase"> Ingredienti: </h5>
+                    <p ng-repeat="ingredient in recipe.ingredients">
+                      {{$index+1}}:  {{ingredient.name}} - {{ingredient.quantity}}
+                    </p>
+                </div>
+                <hr>
+                <div class="col-sm-12">
+                    <h5 class="text-uppercase"> Passi per la preparazione: </h5>
+                    <p ng-repeat="step in recipe.steps track by $index">
+                        {{$index+1}}: {{step}}
+                    </p>
+                </div>
+                <hr>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

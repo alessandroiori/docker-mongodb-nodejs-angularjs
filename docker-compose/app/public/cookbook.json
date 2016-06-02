@@ -1,0 +1,111 @@
+[
+    {
+        "_id": "57385332b1c7eb120ec3d3c1",
+        "name": "Ricette di nonna",
+        "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+        "owner": "silvia",
+        "recipes": [   
+                {
+                    "_id":1,
+                    "name": "torta al cioccolato",
+                    "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+                    "tag": ["Dolce"],
+                    "ingredients": [{"name": "farina", "quantity": "300"}, {"name": "burro", "quantity": "30"}, {"name": "cacao", "quantity": "300"}],
+                    "steps": ["buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato"],
+                    "difficulty": 2,
+                    "cost": 3,
+                    "timeOfSteps": 50,
+                    "numberOfPeople": 4,
+                    "dataCreation": "2016-05-09"
+
+                },
+
+                {
+                    "_id":2,
+                    "name": "pasta con funghi porcini",
+                    "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+                    "tag": ["Primo"],
+                    "ingredients": [{"name": "pasta", "quantity": "400"}, {"name": "funghi", "quantity": "30"}, {"name": "panna", "quantity": "200"}],
+                    "steps": ["buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato", "fdskgjskhgsghjsgjfshakghjkehrkkghKHUH", "FDSJGHJKFDGHADJGHHAFKFJHAJGVJHINKL"],
+                    "difficulty": 2,
+                    "cost": 3,
+                    "timeOfSteps": 25,
+                    "numberOfPeople": 4,
+                    "dataCreation": "2016-05-10"
+                },
+
+                {
+                    "_id":3,
+                    "name": "torta rustica con zucchine",
+                    "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+                    "tag": ["Secondo", "Antipasto"],
+                    "ingredients": [{"name": "pasta sfoglia", "quantity": "300"}, {"name": "zucchine", "quantity": "30"}, {"name": "formaggio", "quantity": "300"}],
+                    "steps": ["buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato"],
+                    "difficulty": 2,
+                    "cost": 3,
+                    "timeOfSteps": 30,
+                    "numberOfPeople": 4,
+                    "dataCreation": "2016-05-11"
+                }]
+
+    },
+
+    {
+        "_id":2,
+        "name": "Dolci che passione",
+        "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+        "owner": "ale", 
+        "recipes": [
+                    {
+                        "_id":1,
+                        "name": "torta al cioccolato",
+                        "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+                        "tag": ["Dolce"],
+                        "ingredients": [{"name": "farina", "quantity": "300"}, {"name": "burro", "quantity": "30"}, {"name": "cacao", "quantity": "300"}],
+                        "steps": ["buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato"],
+                        "difficulty": 2,
+                        "cost": 3,
+                        "timeOfSteps": 50,
+                        "numberOfPeople": 4,
+                        "dataCreation": "2016-05-09"
+
+                    },
+
+                    {
+                        "_id":2,
+                        "name": "pasta con funghi porcini",
+                        "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+                        "tag": ["Primo"],
+                        "ingredients": [{"name": "pasta", "quantity": "400"}, {"name": "funghi", "quantity": "30"}, {"name": "panna", "quantity": "200"}],
+                        "steps": ["buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato", "fdskgjskhgsghjsgjfshakghjkehrkkghKHUH", "FDSJGHJKFDGHADJGHHAFKFJHAJGVJHINKL"],
+                        "difficulty": 2,
+                        "cost": 3,
+                        "timeOfSteps": 25,
+                        "numberOfPeople": 4,
+                        "dataCreation": "2016-05-10"
+                        }]
+    },
+
+    {
+        "_id": 3,
+        "name": "ricettario di Silvia",
+        "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+        "owner": "matteo",
+        "recipes": [
+
+                {
+                "_id":1,
+                "name": "torta al cioccolato",
+                "description": "buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato",
+                "tag": ["Dolce"],
+                "ingredients": [{"name": "farina", "quantity": "300"}, {"name": "burro", "quantity": "30"}, {"name": "cacao", "quantity": "300"}],
+                "steps": ["buonissima e piena di cioccolato!! facile da preparare e molto gustosa! perfetta per chi ama il cioccolato"],
+                "difficulty": 2,
+                "cost": 3,
+                "timeOfSteps": 50,
+                "numberOfPeople": 4,
+                "dataCreation": "2016-05-09"
+
+                }]
+    }
+]

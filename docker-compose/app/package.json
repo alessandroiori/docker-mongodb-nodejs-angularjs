@@ -17,7 +17,7 @@
     "mongoose": "^4.4.13"
   },
   "config": {
-    "mongoose": "mongodb://admin:snapbook:27017/snapcook",
+    "mongoose": "mongodb://mongodb:27017/snapcook",
     "express": {
       "port": 3000
     }

@@ -135,7 +135,7 @@ appControllers.controller('RecipeAddCtrl', ['$scope','AppAdapter',
 }]);
 
 appControllers.service("AppAdapter",['$http',function($http){
-    var host = "http://"+window.location.host+ ":" + window.location.port;
+    var host = "http://"+window.location.host;
 
     this.addCookbook = function (newCookbook){
         return $http.post(host+"/cookbook",newCookbook);

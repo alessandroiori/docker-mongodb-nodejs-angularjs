@@ -1,4 +1,4 @@
 #!/bin/sh
 
 npm install
-node app.js
+#node app.js

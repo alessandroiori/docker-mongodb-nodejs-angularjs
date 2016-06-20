@@ -15,7 +15,7 @@ This project was create for the course of ["Architettura dei Sistemi Software"](
 
 `$ cd snapcook/`
 
-`$ docker-compose up`
+`$ docker-compose up -d`
 
 #####Run application from browser at link:
 
